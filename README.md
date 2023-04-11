@@ -32,4 +32,5 @@ dx run /path/to/install/apps/vcf2gds \
   -igds_filename=my.gds \
   -y
 ```
+See [`dx run`](https://documentation.dnanexus.com/user/helpstrings-of-sdk-command-line-utilities#run) on changing job priority etc.
 
