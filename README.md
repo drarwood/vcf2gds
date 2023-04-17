@@ -1,6 +1,6 @@
 # VCF to GDS Converter for UK Biobank RAP
 #### Developed by Andrew Wood. University of Exeter
-This applet converts a VCF to a GDS for subsequent use (e.g. STARR annotations / STAAR pipeline). This app does not perform annotations itself - it is merely a data format converter. This applet depends on the `SeqVarTools`, `gdsfmt`, and the `SeqArray` R libraries. To save dependency install time this applet comes with an R library that will be unpacked during runtime and should be visible on the DNAnexus worker.
+This applet converts a VCF to a GDS for subsequent use (e.g. STAAR annotations / STAARpipeline). This app does not perform annotations itself - it is merely a data format converter. This applet depends on the `SeqVarTools`, `gdsfmt`, and the `SeqArray` R libraries. To save dependency install time this applet comes with an R library that will be unpacked during runtime and should be visible on the DNAnexus worker.
 
 ---
 ### Obtaining and installing the applet
