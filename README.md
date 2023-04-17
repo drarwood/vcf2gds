@@ -33,7 +33,7 @@ Note priority is set to high below which is recommended for long processes to av
 dx run /path/to/install/apps/vcf2gds \
   -ivcf_file=/path/to/vcf/file/to/convert/my.vcf.gz \
   -igds_filename=my.gds \
-  --priority=high \
+  --priority high \
   -y
 ```
 
