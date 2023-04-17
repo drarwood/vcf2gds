@@ -33,7 +33,7 @@ Simply run the applet by specifying the name (and path if required) of the `*.vc
 dx run /path/to/install/apps/vcf2gds \
   -ivcf_file=/path/to/vcf/file/to/convert/my.vcf.gz \
   -igds_filename=my.gds \
-  --priority high \
+  --priority=high \
   -y
 ```
 
