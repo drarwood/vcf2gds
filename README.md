@@ -28,7 +28,7 @@ Navigate to the RAP directory where you want the output to be directed:
 dx cd /path/to/where/the/output/should/go
 ```
 Simply run the applet by specifying the name (and path if required) of the `*.vcf.gz` input VCF and the filename of the output GDS 
-(note priority is set to high which is recommended for long processes to avoid jobs being reset on normal priority):
+(note priority is set to high which is recommended for long processes to avoid jobs potentially being reset when running as normal priority jobs):
 ```
 dx run /path/to/install/apps/vcf2gds \
   -ivcf_file=/path/to/vcf/file/to/convert/my.vcf.gz \
