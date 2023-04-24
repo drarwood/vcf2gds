@@ -37,3 +37,16 @@ dx run /path/to/install/apps/vcf2gds \
   -y
 ```
 
+The default worker set for this app is `mem1_ssd1_v2_x36` with 30 parallel processes. 
+We note that higher memory instance types are required when processing the UKB 200K WGS
+where all INFO fields have been kept. If you run into memory issues, we suggest either reducing
+the number of parallel processes used for data conversion or use an instance type with more memory.
+To set the number of parallel processes, add the `iparallel` option as follows:
+```
+dx run /path/to/install/apps/vcf2gds \
+    -ivcf_file=/path/to/vcf/file/to/convert/my.vcf.gz \
+    -igds_filename=my.gds \
+    -iparallel=30 \
+    --priority high \
+    -y
+```
