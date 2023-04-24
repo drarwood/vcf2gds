@@ -12,9 +12,10 @@ library(SeqArray)
 args = commandArgs(trailingOnly=TRUE)
 vcf=args[1]
 gds=args[2]
+pN=as.integer(args[3])
 
 ### Perform the conversion
-seqVCF2GDS(vcf, gds, verbose=FALSE, parallel=16, storage.option="LZMA_RA")
+seqVCF2GDS(vcf, gds, verbose=FALSE, parallel=pN, storage.option="LZMA_RA")
 
 
 ### Now we need to inject "PASS" into every entry for variants to be analysed from here:
